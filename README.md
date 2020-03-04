@@ -1,1 +1,1 @@
-# places-backend-setup
+# places-client-setup
