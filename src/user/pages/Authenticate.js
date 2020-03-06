@@ -83,6 +83,8 @@ const Authenticate = props => {
 
                 // Unlike login, sign up also accepts an image so first I need to change form data
 
+                // TODO Come back to properly send file to back end for cloudinary
+
                 const formData = new FormData();
                 formData.append('email', formState.inputs.email.value)
                 formData.append('name', formState.inputs.name.value)
