@@ -67,7 +67,7 @@ const Authenticate = props => {
                     }
                 )
 
-                console.log(`###RESPONSE DATA ON LOGIN UP: UID: ${responseData.userId} , Token: ${responseData.token}`)
+                // console.log(`###RESPONSE DATA ON LOGIN UP: UID: ${responseData.userId} , Token: ${responseData.token}`)
 
                 // Login using context so all components listening will know what user is signed in
                 // Also save jwt to context

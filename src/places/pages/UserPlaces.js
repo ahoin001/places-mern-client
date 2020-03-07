@@ -46,7 +46,13 @@ const UserPlaces = (props) => {
             prevPlaces.filter(place => place.id !== deletedPlaceId))
     }
 
-    console.log(`LOADED PLACES LIST`, loadedPlaces)
+    // const deleteUserHandler = (deletedPlaceId) => {
+
+        
+
+    // }
+
+    // console.log(`LOADED PLACES LIST`, loadedPlaces)
 
     return (
 
@@ -56,7 +62,12 @@ const UserPlaces = (props) => {
 
             {isLoading && <div className='center'> <LoadingSpinner /> </div>}
 
-            {!isLoading && loadedPlaces && <PlaceList items={loadedPlaces} onDeletePlace={placeDeletedHandler} />}
+            {!isLoading && loadedPlaces &&
+                <PlaceList
+                    items={loadedPlaces}
+                    onDeletePlace={placeDeletedHandler}
+                    
+                />}
 
         </React.Fragment>
 

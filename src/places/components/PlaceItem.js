@@ -128,8 +128,9 @@ const PlaceItem = (props) => {
                     {isLoading && <LoadingSpinner asOverlay />}
 
                     <div className="place-item__image">
-                        {/* TODO FIX THIS ENV PATH */}
+                        
                         <img src={props.image} alt={props.title} />
+                        
                     </div>
 
                     <div className="place-item__info">
