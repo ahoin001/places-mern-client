@@ -26,7 +26,7 @@ const Authenticate = props => {
 
     const { isLoading, error, sendRequest, clearError } = useHttpClient();
 
-    // Use custom hook for formHandling our custom Input components
+    // Use custom hook for saving form values our custom Input components
     const [formState, inputHandler, setFormData] = useForm({
         email: {
             value: '',
